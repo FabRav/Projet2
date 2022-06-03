@@ -3,50 +3,119 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge">  -->
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!-- font awesome pour icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Booki</title>
 </head>
 
 <body>
 
     <!-- Debut header -->
-    <header>
-        <a href="#"><img class="logoBooki" src="./assets/img/logo/Booki.png" alt="logo Booki de l'entreprise"></a>
+    <header class="flexheader">
+        <a href="#"><img class="logobooki" src="./assets/img/logo/Booki.png" alt="logo Booki de l'entreprise"></a>
         <nav>
-            <ul class="menu">
-                <li><a class="active" href="#hebergement">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
+            <!-- ça marche pas ça -->
+            <ul class="navmenu">
+                <li><a class="hover" href="#hebergement">Hébergements</a></li>
+                <li class="marginleft"><a class="hover" href="#activites">Activités</a></li>
             </ul>
+            <!-- ça marche pas ça -->
+
         </nav>
     </header>
     <!-- Fin header -->
 
     <!-- Debut main -->
     <main>
-        <!--Debut Section-->
-        <section class="sectionRechercher">
+        <!--Debut Section 1 -->
+        <section class="padding1">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            <form>
+            <p class="padding1 parafontsize">En plein centre ville ou en pleine nature</p>
+            <form class="formflexbox">
                 <i class="fas fa-map-marker-alt"></i>
-                <input type="search" name="recherche" placeholder="ville, pays">
-                <button>Rechercher</button>
+                <input class="inputform" type="search" name="recherche" placeholder="Marseille, France">
+                <button class="btnrechercher">Rechercher</button>
             </form>
-            <div class="filtres">
+            <div class="filtres padding1">
                 <h2>Filtres</h2>
-                <ul>
-                    <li><a href="#" class="btn icon-money">Économique</a></li>
+                <ul class="flexfiltres">
+                    <li><i class="fas fa-money-bill-wave btn"></i><a href="#" class="btn icon-money">Économique</a></li>
                     <li><a href="#" class="btn icon-child">Familial</a></li>
                     <li><a href="#" class="btn icon-heart">Romantique</a></li>
                     <li><a href="#" class="btn icon-dog">Animaux autorisés</a></li>
                 </ul>
             </div>
-            <p class="icon-info">Plus de 500 logements sont disponibles dans cette ville.</p>
+            <p class="icon-info padding1 parafontsize">Plus de 500 logements sont disponibles dans cette ville.</p>
         </section>
-        <!--Fin Section-->
+        <!--Fin Section 1 -->
+
+        <!--Début Section 2 (cards) -->
+
+        <section class="greybordercurve sizesection2">
+            <h3> Hébergements à Marseille</h3>
+            <div class="gridcard">
+                <div class="gridcard">
+                    <ul class="childcard whitebordercurve">
+                        <li>
+                            <a href="#"><img class="imgauberge" src="./assets/img/hebergement/hebergement_01.png"
+                                    alt="hebergement"></a>
+                        </li>
+                        <li>
+                            <p>bbbbbbbb</p>
+                        </li>
+                        <li>
+                            <p>cccccccc</p>
+                        </li>
+                        <li>
+                            <!-- des div pour chaque icones + flex ? -->
+                            <i class="fas fa-star"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gridcard">
+                    <ul class="childcard">
+                        <li>
+                            <p>11111111</p>
+                        </li>
+                        <li>
+                            <p>22222222</p>
+                        </li>
+                        <li>
+                            <p>33333333</p>
+                        </li>
+                        <li>
+                            <p>44444444</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gridcard">
+                    <p class="childcard">3eme card</p>
+                </div>
+                <div class="gridcard">
+                    <p class="childcard">4ème card</p>
+                </div>
+                <div class="gridcard">
+                    <p class="childcard">5ème card</p>
+                </div>
+                <div class="gridcard">
+                    <p class="childcard">6ème card</p>
+                </div>
+            </div>
+            <h5>BLA BLA BLA</h5>
+            <i class="fas fa-star"></i>
+
+        </section>
+
+
+
     </main>
     <!-- Fin main -->
 

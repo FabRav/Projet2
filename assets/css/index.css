@@ -1,17 +1,244 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+/* couleurs à utiliser pour le livrable : le bleu (#0065FC) / bleu clair (#DEEBFF) / gris pour le fond (#F2F2F2) */
+
+
+
 * {
     font-family: 'Raleway', sans-serif;
 }
 
 header,
 main {
-    padding: 0 2.5em;
+    padding: 0 40px;
 }
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
 
 /* ------Début Class Réutilisable---------- */
 
+.padding1 {
+    padding: 10px 0;
+}
+
+.parafontsize {
+    font-size: 14px;
+}
+
+
+.greybordercurve {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+}
+
+.whitebordercurve {
+    background-color: white;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+.colorblue {
+    color: #0065FC;
+}
+
+.colorbleuclair {
+    color: #DEEBFF;
+}
+
+.colorgris {
+    color: #F2F2F2;
+}
+
+.colorblack {
+    color: black;
+}
 
 
 
-/* ------Fin Class Réutilisable---------- */
+
+/* ------ Fin Class Réutilisable ---------- */
+
+/*  -- Class  Header --  */
+
+.flexheader {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 12px;
+}
+
+.logobooki {
+    padding: 0;
+    object-fit: cover;
+    height: 40px;
+    width: 100%;
+}
+
+
+.navmenu {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+}
+
+.marginleft {
+    margin-left: 15px;
+}
+
+.hover:hover {
+    border-top: 1px #0065FC solid;
+    color: #0065FC;
+}
+
+
+
+/* -------- Debut Class Main ------------ */
+
+
+/* --- Class Section 1--- */
+
+
+.formflexbox {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+/* oulala j'ai fais quoi là, ne pas me taper :s */
+
+.fa-map-marker-alt {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 12px;
+    background-color: #F2F2F2;
+    border-radius: 20px 0 0 20px;
+}
+
+.inputform {
+    padding-left: 10px;
+    font-weight: bold;
+    border-color: #F2F2F2;
+    /* bordel : px ou color ne fonctionne pas là dessus) */
+}
+
+.btnrechercher {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.filtres {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.flexfiltres {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/* icones boutons/info */
+
+.btn {
+    margin: 0 30px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+
+/*
+.icon-money {}
+
+.icon-child {}
+
+.icon-heart {}
+
+.icon-dog {}
+
+.icon-info {}
+*/
+
+
+/*
+<i class="fas fa-money-bill-wave"></i>
+<i class="fas fa-child-reaching"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-dog"></i>
+<i class="fas fa-info"></i>
+*/
+
+
+/* début section 2 */
+
+.sizesection2 {
+    width: 65%;
+    height: 450px;
+}
+
+h3 {
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 20px 15px;
+}
+
+.gridcard {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+
+}
+
+.childcard {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.imgauberge {
+    padding: 0;
+    object-fit: cover;
+    height: 100px;
+    width: 150px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+/*
+.troisrepeat {
+    background-repeat: repeat-x;
+    background-image: url("star.png");
+}
+*/
+
+h5 {
+    margin-top: 30px;
+}
+
+
+
+
+/* grid section 2 cards */
