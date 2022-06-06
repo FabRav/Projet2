@@ -19,226 +19,246 @@ a {
 }
 
 
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
 /* ------Début Class Réutilisable---------- */
-
-.padding1 {
-    padding: 10px 0;
-}
-
-.parafontsize {
-    font-size: 14px;
-}
-
-
-.greybordercurve {
-    background-color: #F2F2F2;
-    border-radius: 12px;
-}
-
-.whitebordercurve {
-    background-color: white;
-    border-radius: 12px;
-    padding: 0 10px;
-}
-
-.colorblue {
-    color: #0065FC;
-}
-
-.colorbleuclair {
-    color: #DEEBFF;
-}
-
-.colorgris {
-    color: #F2F2F2;
-}
-
-.colorblack {
+.hotel-info h3,
+#activites h3 {
     color: black;
+    margin: 0 0 5px 0;
 }
 
+.hotel-info p {
+    margin: 0 0 10px 0;
+}
 
-
+.titre-section {
+    margin: 0.5em 0 1em 0;
+}
 
 /* ------ Fin Class Réutilisable ---------- */
 
-/*  -- Class  Header --  */
 
-.flexheader {
+/* Header Début */
+header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     align-content: center;
     align-items: center;
-    height: 60px;
+    justify-content: space-between;
+    height: 65px;
+}
+
+header nav {
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+.menu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: #363636;
+    text-decoration: none;
+    padding: 0 2em;
+    border-top: 2px #ffffff solid;
+    font-size: 0.85em;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+}
+
+/* Main Début */
+main {
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    grid-gap: 2.5em;
+}
+
+/* Ma section 1 Début */
+.sectionRechercher {
+    grid-row: 1;
     font-size: 12px;
 }
 
-.logobooki {
-    padding: 0;
-    object-fit: cover;
-    height: 40px;
-    width: 100%;
-}
-
-
-.navmenu {
+.sectionRechercher form {
     display: flex;
     flex-direction: row;
-    row-gap: 20px;
-}
-
-.marginleft {
-    margin-left: 15px;
-}
-
-.hover:hover {
-    border-top: 1px #0065FC solid;
-    color: #0065FC;
-}
-
-
-
-/* -------- Debut Class Main ------------ */
-
-
-/* --- Class Section 1--- */
-
-
-.formflexbox {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
-}
-
-/* oulala j'ai fais quoi là, ne pas me taper :s */
-
-.fa-map-marker-alt {
-    display: flex;
-    font-size: 15px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-right: 12px;
-    background-color: #F2F2F2;
-    border-radius: 20px 0 0 20px;
+    margin: 15px 0;
 }
 
-.inputform {
-    padding-left: 10px;
+.sectionRechercher input {
+    border: none;
+    padding: 10px 15px;
     font-weight: bold;
-    border-color: #F2F2F2;
-    /* bordel : px ou color ne fonctionne pas là dessus) */
+    width: 12em;
 }
 
-.btnrechercher {
-    background-color: #0065FC;
+.sectionRechercher button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    display: inline-block;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    font-weight: bold;
     color: white;
-    font-weight: bold;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
+    background-color: #0065FC;
+    border: 2px solid #0065FC;
+}
+
+.sectionRechercher button:hover {
+    color: #0065FC;
+    background-color: white;
+}
+
+.sectionRechercher form i {
+    border: none;
+    border-radius: 10px 0 0 10px;
+    display: inline-block;
+    padding: 11px 15px;
+    font-size: 14px;
+    color: black;
+    background-color: #efefef;
+    border: 2px solid #efefef;
 }
 
 .filtres {
     display: flex;
-    flex-flow: row nowrap;
-    font-size: 15px;
-    font-weight: bold;
-
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 14px;
 }
 
-.flexfiltres {
+.filtres h3 {
+    font-size: 14px;
+}
+
+.filtres ul {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    flex-flow: row wrap;
+    gap: 20px;
 }
 
+.filtres .btn {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px 0 10px;
+    border: 2px solid #efefef;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
 
+.filtres .btn:hover {
+    color: #0065FC;
+    background-color: #d6e7ff;
+    border-color: #d6e7ff;
+}
 
-/* icones boutons/info */
-
-.btn {
-    margin: 0 30px;
+.filtres .btn:before {
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    padding: 10px;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #0065FC;
+    background-color: #d6e7ff;
     border-radius: 50%;
-    background-color: #DEEBFF;
+    outline: #d6e7ff 3px solid;
+    outline-offset: -1px;
+}
+
+.filtres .icon-money:before {
+    content: "\f53a";
+    padding: 10px 8.5px;
+}
+
+.filtres .icon-child:before {
+    content: "\f1ae";
+    padding: 10px 12px;
+}
+
+.filtres .icon-heart:before {
+    content: "\f004";
+}
+
+.filtres .icon-dog:before {
+    content: "\f6d3";
+}
+
+.sectionRechercher p.icon-info {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 25px;
+}
+
+.sectionRechercher .icon-info:before {
+    display: inline-block;
+    position: relative;
+    bottom: 1px;
+    right: 25px;
+    margin: 0 -18px 0 0;
+    padding: 3px 6px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;
+    line-height: 1;
+    content: "\f129";
     color: #0065FC;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    border-radius: 50%;
 }
 
-/*
-.icon-money {}
-
-.icon-child {}
-
-.icon-heart {}
-
-.icon-dog {}
-
-.icon-info {}
-*/
+/* Ma section 1 Fin */
 
 
-/*
-<i class="fas fa-money-bill-wave"></i>
-<i class="fas fa-child-reaching"></i>
-<i class="fas fa-heart"></i>
-<i class="fas fa-dog"></i>
-<i class="fas fa-info"></i>
-*/
 
 
-/* début section 2 */
-
-.sizesection2 {
-    width: 65%;
-    height: 450px;
+/* Ma section 2 Début */
+#hebergement {
+    grid-row: 2;
+    padding: 2.5em;
+    background-color: #efefef;
+    border-radius: 20px;
 }
 
-h3 {
-    font-size: 15px;
-    margin-top: 30px;
-    padding: 20px 15px;
+/* Ma section 3 Début */
+#lesPlusPopulaires {
+    grid-row: 2;
+    padding: 2.5em;
+    background-color: #efefef;
+    border-radius: 20px;
 }
 
-.gridcard {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
-    grid-gap: 20px;
-    padding-left: 20px;
-    padding-bottom: 40px;
-
+/* Ma section 4 Début */
+#activites {
+    grid-row: 3;
+    grid-column: 1/3;
+    margin: 0 0 3em;
 }
-
-.childcard {
-    grid-area: 1 / 1 / 3 / 4;
-}
-
-.imgauberge {
-    padding: 0;
-    object-fit: cover;
-    height: 100px;
-    width: 150px;
-}
-
-.fa-star {
-    color: #0065FC;
-}
-
-/*
-.troisrepeat {
-    background-repeat: repeat-x;
-    background-image: url("star.png");
-}
-*/
-
-h5 {
-    margin-top: 30px;
-}
-
-
-
-
-/* grid section 2 cards */
