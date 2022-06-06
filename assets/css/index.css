@@ -248,6 +248,37 @@ main {
     border-radius: 20px;
 }
 
+.hotel-cartes {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    background-color: white;
+    grid-gap: 20px;
+    border-radius: 20px;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+.hotel-photo img {
+    padding: 0;
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+}
+
+.hotel-info {}
+
+.hotel-cartes .checked {
+    color: #0065FC;
+}
+
+.hotel-cartes .unchecked {
+    color: #F2F2F2;
+}
+
+
+
 /* Ma section 3 Début */
 #lesPlusPopulaires {
     grid-row: 2;
